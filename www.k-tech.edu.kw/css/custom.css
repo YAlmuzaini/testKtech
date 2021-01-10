@@ -1,0 +1,318 @@
+/* Add here all your CSS customizations */
+.published {
+	display:block; 
+	text-align: center;
+	float:left; 
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:none;
+	background:url(clip-bottom.html) 
+		right bottom no-repeat;
+	width:2.2em;
+}
+.pub-month {
+	display:block;
+	font-size: .9em;
+	margin:0; 
+	padding:0;
+	padding-top:12px;
+	background:url(clip-top.html) 
+		center top repeat-x;
+}
+.pub-date { 
+	display:block; 
+	font-size:1.4em;
+	margin:0; 
+	padding:0;
+}
+/* Overall wrapper */
+.monthly {
+	background: #F3F3F5;
+	color:#545454;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: relative;
+}
+
+.calendarWrapper
+{
+    background-color: #4CCAEF;
+    padding: 10px;
+    display: inline-block;
+}
+
+.myCalendar
+{
+    background-color: #f2f2f2;
+    width: 156px;
+    border: none !important;
+}
+
+    .myCalendar a
+    {
+        text-decoration: none;
+    }
+
+    .myCalendar .myCalendarTitle
+    {
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        background-color: #4CCAEF;
+        color: #ffffff;
+        border: none !important;
+    }
+
+    .myCalendar th.myCalendarDayHeader
+    {
+        height: 25px;
+    }
+
+    .myCalendar tr
+    {
+        border-bottom: solid 1px #ddd;
+    }
+
+    .myCalendar table tr
+    {
+        border-bottom: none !important;
+    }
+
+    .myCalendar tr:last-child td
+    {
+        border-bottom: none;
+    }
+
+    .myCalendar tr td.myCalendarDay, .myCalendar tr th.myCalendarDayHeader
+    {
+        border-right: solid 1px #ddd;
+    }
+
+    .myCalendar tr td:last-child.myCalendarDay, .myCalendar tr th:last-child.myCalendarDayHeader
+    {
+        border-right: none;
+    }
+
+    .myCalendar td.myCalendarDay:nth-child(7) a
+    {
+        color: #c52e2e !important;
+    }
+
+    .myCalendar .myCalendarNextPrev
+    {
+        text-align: center;
+    }
+
+        .myCalendar .myCalendarNextPrev a
+        {
+            font-size: 1px;
+        }
+
+        .myCalendar .myCalendarNextPrev:nth-child(1) a
+        {
+            color: #4CCAEF!important;
+            background: url("prevMonth.html") no-repeat center center;
+        }
+
+            .myCalendar .myCalendarNextPrev:nth-child(1) a:hover, .myCalendar .myCalendarNextPrev:nth-child(3) a:hover
+            {
+                background-color: transparent;
+            }
+
+        .myCalendar .myCalendarNextPrev:nth-child(3) a
+        {
+            color: #4CCAEF!important;
+            background: url("nextMonth.html") no-repeat center center;
+        }
+
+    .myCalendar td.myCalendarSelector a
+    {
+        background-color: #25bae5;
+    }
+
+    .myCalendar .myCalendarDayHeader a,
+    .myCalendar .myCalendarDay a,
+    .myCalendar .myCalendarSelector a,
+    .myCalendar .myCalendarNextPrev a
+    {
+        display: block;
+        line-height: 20px;
+    }
+
+    .myCalendar .myCalendarToday
+    {
+        background-color: #f2f2f2;
+        -webkit-box-shadow: 1px 1px 8px 1px #8f8f8f;
+        box-shadow: 1px 1px 8px 1px #8f8f8f;
+        display: inline-block;
+        width: 22px !important;
+        height: 19px !important;
+        border: 2px solid #f2f2f2;
+        margin-left: -1px;
+        margin-top: -1px;
+        position: relative;
+    }
+
+        .myCalendar .myCalendarToday a
+        {
+            color: #25bae5 !important;
+            font-weight: bold;
+        }
+
+            .myCalendar .myCalendarToday a:after
+            {
+                content: "TODAY";
+                color: #000;
+                font-size: 0.5em;
+                display: inline-block;
+                pointer-events: none;
+                width: 100%;
+                float: left;
+            }
+
+    .myCalendar .myCalendarDay a:hover,
+    .myCalendar .myCalendarSelector a:hover
+    {
+        background-color: #25bae5;
+    }
+
+
+ #social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 1px 1px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+      border-color: #e64522;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+      border-color: #cb2027;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+      border-color: #3a5876;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+      border-color: #e88845;
+}
+
