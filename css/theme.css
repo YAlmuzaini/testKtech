@@ -15,26 +15,34 @@ Version: 		4.4.0
     unicode-range: ;
 } */
 
+@font-face {
+	font-family: Dazzed;
+	src: url(fonts/Dazzed-Regular.ttf);
+	unicode-range: U+0600, U+06FF;
+  }
+
+@font-face {
+	font-family: Almarai;
+	src: url(fonts/Almarai-Regular.ttf);
+	unicode-range: U+0000 to U+007F;
+  }
+
 html {
 	direction: ltr;
 	overflow-x: hidden;
 }
 
-/* html[lang*="en"] {
-    font-family: url(fonts/Dazzed-Regular.ttf);
-} */
-
-body[lang*="ar"] {
-    font-family: "Almarai";
-}
-
 body {
 	background-color: #FFF;
 	color: #777;
-	font-family: url(fonts\Dazzed-Regular.ttf);
+	font-family: Almarai, Dazzed;
 	font-size: 14px;
 	line-height: 22px;
 	margin: 0;
+}
+
+.introText{
+	font-size: x-large;
 }
 
 body a {
