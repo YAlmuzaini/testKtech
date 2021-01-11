@@ -2738,8 +2738,8 @@ section.section-custom-map-2 section.section {
 }
 /* #Footer */
 #footer {
-	background: #0e0e0e;
-	border-top: 4px solid #0e0e0e;
+	background: #212e7e;
+	border-top: 4px solid #212e7e;
 	font-size: 0.9em;
 	margin-top: 50px;
 	padding: 70px 0 0;
@@ -3603,7 +3603,7 @@ html.dark .thumb-info .thumb-info-wrapper:after {
 }
 
 html.dark .thumb-info-social-icons {
-	rder h4, html.dark .headin
+	border-top-color:#373f4a;
 }
 
 html.dark ul.nav-list > li a {
