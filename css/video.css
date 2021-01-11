@@ -1,4 +1,4 @@
-header {
+#test {
     position: relative;
     background-color: black;
     height: 75vh;
@@ -7,7 +7,7 @@ header {
     overflow: hidden;
   }
   
-  header video {
+  #test video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,27 +22,27 @@ header {
     transform: translateX(-50%) translateY(-50%);
   }
   
-  header .container {
+  #test .container {
     position: relative;
     z-index: 2;
   }
   
-  header .overlay {
+  #test .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.01;
     z-index: 1;
   }
   
   @media (pointer: coarse) and (hover: none) {
-    header {
+    #test header {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
-    header video {
+    #test header video {
       display: none;
     }
   }

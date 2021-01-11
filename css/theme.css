@@ -4,20 +4,34 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Version: 		4.4.0
 */
 
-/* @import url('fonts/Almarai-Regular.ttf');
+/* @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap'); */
+
+/* @font-face {
+    font-family: Dazzed;
+    src: url(fonts/Dazzed-Regular.ttf) format("opentype");
+    unicode-range: ;
+} */
 
 html {
 	direction: ltr;
 	overflow-x: hidden;
 }
 
+/* html[lang*="en"] {
+    font-family: url(fonts/Dazzed-Regular.ttf);
+} */
+
+body[lang*="ar"] {
+    font-family: "Almarai";
+}
+
 body {
 	background-color: #FFF;
 	color: #777;
-	font-family: "Almarai";
+	font-family: url(fonts\Dazzed-Regular.ttf);
 	font-size: 14px;
 	line-height: 22px;
 	margin: 0;
