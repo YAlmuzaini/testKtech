@@ -3,6 +3,12 @@ Name: 			theme.css
 Written by: 	Okler Themes - (http://www.okler.net)
 Version: 		4.4.0
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
 html {
 	direction: ltr;
 	overflow-x: hidden;
@@ -11,7 +17,7 @@ html {
 body {
 	background-color: #FFF;
 	color: #777;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: "Almarai";
 	font-size: 14px;
 	line-height: 22px;
 	margin: 0;
