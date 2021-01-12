@@ -16,15 +16,15 @@ Version: 		4.4.0
 } */
 
 @font-face {
-	font-family: Dazzed;
+	font-family: "Dazzed";
 	src: url(fonts/Dazzed-Regular.ttf);
-	unicode-range: U+0000 to U+007F;
+	unicode-range: U+0000-007F;
   }
 
 @font-face {
-	font-family: Almarai;
+	font-family: "Almarai";
 	src: url(fonts/Almarai-Regular.ttf);
-	unicode-range: U+0600 to U+06FF;
+	unicode-range: U+0600-06FF;
   }
 
 html {
