@@ -48,6 +48,9 @@
     <link rel="stylesheet" href="css/theme-shop.css" />
     <link rel="stylesheet" href="css/theme-animate.css" />
     <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/footerStyle.css" />
+    <link rel="stylesheet" href="css/cookieConsent.css" />
+
     <link
       rel="stylesheet"
       href="vendor/rs-plugin/css/settings.css"
@@ -697,10 +700,14 @@
           <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
               <div class="w-100 text-white">
-                <br><br>
+                <br /><br />
                 <h1></h1>
-                <h1 class="text-muted"><strong>Welcome to kuwait technical college</strong></h1>
-                <h1 class="text-muted"><strong>حياكم الله في كلية الكويت التقنية</strong></h1>
+                <h1 class="text-muted">
+                  <strong>Welcome to kuwait technical college</strong>
+                </h1>
+                <h1 class="text-muted">
+                  <strong>حياكم الله في كلية الكويت التقنية</strong>
+                </h1>
                 <p class="lead text-center text-primary introText">
                   <strong>
                     Welcome to Kuwait Technical College (ktech) where a wide
@@ -1076,8 +1083,8 @@
                   <ul class="list list-icons list-icons-style-3 mt-xlg">
                     <li>
                       <i class="fa fa-map-marker"></i
-                      ><strong>Address:</strong> Block 2, Street 5, Abu-Halifa,
-                      Kuwait
+                      ><strong>Address:</strong> Kuwait technical Block 2,
+                      Street 5, Abu-Halifa, Kuwait
                     </li>
                     <li>
                       <i class="fa fa-envelope-square"></i
@@ -1212,12 +1219,12 @@
         </div>
       </div>
     </div>
-    <footer id="footer" class="short">
+    <!-- <footer id="footer" class="short">
       <div class="container">
         <div class="footer-copyright">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <p style="color: white">
                   © All Rights Reserved to ktech.Copyright 2021
                 </p>
@@ -1267,11 +1274,129 @@
                   </ul>
                 </nav>
               </div>
+              <div class="col-md-2" style="align-content: center">
+                <nav id="sub-menu">
+                  <ul>
+                    <li><a href="Careers.html">Terms</a></li>
+                    <li><a href="Contactus.html">Privacy</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </footer> -->
+
+    <!-- testME -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4 class="title">Contact Us</h4>
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">E-mail :</span>
+                  <input
+                    class="form-control"
+                    placeholder="Write your email .."
+                    type="text"
+                  />
+                </div>
+                <br />
+                <div class="input-group">
+                  <textarea
+                    name="Contact"
+                    id=""
+                    cols="45"
+                    rows="5"
+                    placeholder="Whats on your mind..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <button
+                  type="submit"
+                  class="btn btn-primary pull-right"
+                  id="btnContactUs"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+            <br />
+          </div>
+          <div class="col-sm-1"><br /><br /></div>
+          <div class="col-sm-4">
+            <h4 class="title">Imprtant Links</h4>
+            <span class="acount-icon">
+              <a href="#"
+                ><i class="fa fa-desktop" aria-hidden="true"></i> Careers</a
+              >
+              <a href="#"><i class="fa fa-book" aria-hidden="true"></i> CCE</a>
+              <a href="#"
+                ><i class="fa fa-check-square-o" aria-hidden="true"></i> Terms &
+                Conditions</a
+              >
+              <a href="#"
+                ><i class="fa fa-eye" aria-hidden="true"></i> Privacy</a
+              >
+            </span>
+            <br /><br />
+          </div>
+          <div class="col-sm-3">
+            <h4 class="title">Follow Us</h4>
+            <ul class="payment">
+              <li class="social-icons-whatsapp">
+                <a
+                  href="https://web.whatsapp.com/send?phone=96560903818"
+                  target="_blank"
+                  title="WhatsApp"
+                  ><i class="fa fa-whatsapp"></i
+                ></a>
+              </li>
+              <li class="social-icons-facebook">
+                <a
+                  href="https://www.facebook.com/KTCQ8"
+                  target="_blank"
+                  title="Facebook"
+                  style="padding-left: 100"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li class="social-icons-twitter">
+                <a
+                  href="https://twitter.com/K_TechKW"
+                  target="_blank"
+                  title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social-icons-instagram">
+                <a
+                  href="https://www.instagram.com/K_Techkw/"
+                  target="_blank"
+                  title="Instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row text-center">
+          © All Rights Reserved to ktech.Copyright 2021
+        </div>
+      </div>
     </footer>
+
+    <div id="cookieConsent">
+      <div id="closeCookieConsent">x</div>
+      This website is using cookies. <a href="#" target="_blank">More info</a>.
+      <a class="cookieConsentOK">That's Fine</a>
+    </div>
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -1287,6 +1412,20 @@
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="vendor/vide/vide.min.js"></script>
+
+
+    <!-- cookie Consent -->
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#cookieConsent").fadeIn(200);
+        }, 4000);
+        $("#closeCookieConsent, .cookieConsentOK").click(function () {
+          $("#cookieConsent").fadeOut(200);
+        });
+      });
+    </script>
 
     <!-- jquery whatsapp icon-->
 
