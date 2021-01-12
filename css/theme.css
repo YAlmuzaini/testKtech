@@ -41,6 +41,11 @@ body {
 	margin: 0;
 }
 
+.ktechText{
+	color: #11173f;
+	font-weight: bolder;
+}
+
 .introText{
 	font-size: x-large;
 }
