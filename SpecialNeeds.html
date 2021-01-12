@@ -984,58 +984,120 @@
         </div>
       </div>
     </div>
-    <footer id="footer" class="short">
+<footer id="footer" class="footer">
       <div class="container">
-        <div class="footer-copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <p style="color: white">
-                  © All Rights Reserved to K-TECH.Copyright 2016
-                </p>
+        <div class="row">
+          <div class="col-sm-4">
+            <h4 class="title">Contact Us</h4>
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">E-mail :</span>
+                  <input
+                    class="form-control"
+                    placeholder="Write your email .."
+                    type="text"
+                  />
+                </div>
+                <br />
+                <div class="input-group">
+                  <textarea
+                    name="Contact"
+                    id=""
+                    cols="45"
+                    rows="5"
+                    placeholder="Whats on your mind..."
+                  ></textarea>
+                </div>
               </div>
-              <div class="col-md-3">
-                <h4>Follow Us</h4>
-                <ul class="social-icons">
-                  <li class="social-icons-facebook">
-                    <a
-                      href="https://www.facebook.com/KTCQ8"
-                      target="_blank"
-                      title="Facebook"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                  </li>
-                  <li class="social-icons-twitter">
-                    <a
-                      href="https://twitter.com/K_TechKW"
-                      target="_blank"
-                      title="Twitter"
-                      ><i class="fa fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="social-icons-instagram">
-                    <a
-                      href="https://www.instagram.com/K_Techkw/"
-                      target="_blank"
-                      title="Instagram"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                  </li>
-                </ul>
+              <div class="col-sm-12">
+                <button
+                  type="submit"
+                  class="btn btn-primary pull-right"
+                  id="btnContactUs"
+                >
+                  Send Message
+                </button>
               </div>
-              <div class="col-md-3" style="align-content: center">
-                <nav id="sub-menu">
-                  <ul>
-                    <li><a href="Careers.html">Careers</a></li>
-                    <li><a href="Contactus.html">Contact Us</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
+            </form>
+            <br />
           </div>
+          <div class="col-sm-1"><br /><br /></div>
+          <div class="col-sm-4">
+            <h4 class="title">Imprtant Links</h4>
+            <span class="acount-icon">
+              <a href="#"
+                ><i class="fa fa-desktop" aria-hidden="true"></i> Careers</a
+              >
+              <a href="#"><i class="fa fa-book" aria-hidden="true"></i> CCE</a>
+              <a href="#"
+                ><i class="fa fa-check-square-o" aria-hidden="true"></i> Terms &
+                Conditions</a
+              >
+              <a href="policyConditionPage.html"
+                ><i class="fa fa-eye" aria-hidden="true"></i> Privacy Policy</a
+              >
+            </span>
+            <br /><br />
+          </div>
+          <div class="col-sm-3">
+            <h4 class="title">Follow Us</h4>
+            <ul class="payment">
+              <li class="social-icons-whatsapp">
+                <a
+                  href="https://web.whatsapp.com/send?phone=96560903818"
+                  target="_blank"
+                  title="WhatsApp"
+                  ><i class="fa fa-whatsapp"></i
+                ></a>
+              </li>
+              <li class="social-icons-facebook">
+                <a
+                  href="https://www.facebook.com/KTCQ8"
+                  target="_blank"
+                  title="Facebook"
+                  style="padding-left: 100"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li class="social-icons-twitter">
+                <a
+                  href="https://twitter.com/K_TechKW"
+                  target="_blank"
+                  title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social-icons-instagram">
+                <a
+                  href="https://www.instagram.com/K_Techkw/"
+                  target="_blank"
+                  title="Instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row text-center">
+          © All Rights Reserved to ktech.Copyright 2021
         </div>
       </div>
     </footer>
+
+    <div class="cookie-container">
+      <p>
+        <strong>
+          We use cookies in this website to give you the best experience on our
+          site and show you relevant ads. To find out more, read our
+          <a style="font-size: medium" href="#">Privacy Policy</a> and
+          <a style="font-size: medium" href="#">Cookie Policy</a>.
+        </strong>
+      </p>
+
+      <button class="cookie-btn">Okay</button>
+    </div>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -1051,6 +1113,25 @@
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="vendor/vide/vide.min.js"></script>
+
+    <!-- cookie Consent -->
+
+    <script>
+      const cookieContainer = document.querySelector(".cookie-container");
+      const cookieButton = document.querySelector(".cookie-btn");
+
+      cookieButton.addEventListener("click", () => {
+        cookieContainer.classList.remove("active");
+        localStorage.setItem("cookieBannerDisplayed", "true");
+      });
+
+      setTimeout(() => {
+        if (!localStorage.getItem("cookieBannerDisplayed")) {
+          cookieContainer.classList.add("active");
+        }
+      }, 2000);
+    </script>
+
 
     <!-- jquery whatsapp icon-->
 
