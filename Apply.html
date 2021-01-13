@@ -42,7 +42,7 @@
       rel="stylesheet"
       href="vendor/magnific-popup/magnific-popup.min.css"
     />
-<link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme-elements.css" />
     <link rel="stylesheet" href="css/theme-blog.css" />
     <link rel="stylesheet" href="css/theme-shop.css" />
@@ -219,8 +219,6 @@
 
                     <nav class="header-nav-top">
                       <ul class="nav nav-pills">
-                        
-
                         <li>
                           <a href="Contactus.html"
                             ><span class="ws-nowrap"
@@ -320,7 +318,7 @@
                         <nav>
                           <ul class="nav nav-pills" id="mainNav1">
                             <li class="active">
-                              <a href="Apply.html" target="_blank">
+                              <a href="newApplyPage.html" target="_blank">
                                 Apply Online</a
                               >
                             </li>
@@ -903,7 +901,7 @@
         </div>
       </div>
     </div>
-<footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
@@ -957,7 +955,8 @@
                 ><i class="fa fa-eye" aria-hidden="true"></i> Privacy Policy</a
               >
               <a href="cookiesPolicies.html"
-                ><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Cookies Policies</a
+                ><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                Cookies Policies</a
               >
             </span>
             <br /><br />
@@ -1013,8 +1012,13 @@
         <strong>
           We use cookies in this website to give you the best experience on our
           site and show you relevant ads. To find out more, read our
-          <a style="font-size: medium" href="privacyPolicy.html">Privacy Policy</a> and
-          <a style="font-size: medium" href="cookiesPolicies.html">Cookie Policy</a>.
+          <a style="font-size: medium" href="privacyPolicy.html"
+            >Privacy Policy</a
+          >
+          and
+          <a style="font-size: medium" href="cookiesPolicies.html"
+            >Cookie Policy</a
+          >.
         </strong>
       </p>
 
@@ -1053,7 +1057,6 @@
         }
       }, 2000);
     </script>
-
 
     <!-- jquery whatsapp icon-->
 
@@ -1207,55 +1210,45 @@
 		-->
 
     <script type="text/javascript">
-
       var flagLimit = 0;
       var fso;
       var href_values;
 
-
-
-
-          if ($(window).width() <= 1100) {
-
-              href_values = ["https://api.whatsapp.com/send?phone=96567009121", "https://api.whatsapp.com/send?phone=96560700265", "https://api.whatsapp.com/send?phone=96560707382", "https://api.whatsapp.com/send?phone=96565881496"];
-
-
-
-          } else {
-
-              href_values = ["https://web.whatsapp.com/send?phone=96567009121", "https://web.whatsapp.com/send?phone=96560700265", "https://web.whatsapp.com/send?phone=96560707382", "https://web.whatsapp.com/send?phone=96565881496"];
-
-          }
-
-          var existing_class = '';
-
-
-          if (flagLimit <= 3) {
-
-              document.getElementById("anc").href = href_values[flagLimit];
-
-
-          }
-
-
-
-          if (flagLimit > 4 && $(window).width() <= 1100) {
-
-              document.getElementById("anc").href = "https://api.whatsapp.com/send?phone=96560903818";
-
-              flagLimit = 0;
-          } else if (flagLimit > 4 && $(window).width() > 1100) {
-
-              document.getElementById("anc").href = "https://web.whatsapp.com/send?phone=96560903818";
-              flagLimit = 0;
-
-          }
-          var xNum = flagLimit +1;
-          document.getElementById("iTest").value = xNum.toString();
-          document.updateSettings();
-
-
+      if ($(window).width() <= 1100) {
+        href_values = [
+          "https://api.whatsapp.com/send?phone=96567009121",
+          "https://api.whatsapp.com/send?phone=96560700265",
+          "https://api.whatsapp.com/send?phone=96560707382",
+          "https://api.whatsapp.com/send?phone=96565881496",
+        ];
+      } else {
+        href_values = [
+          "https://web.whatsapp.com/send?phone=96567009121",
+          "https://web.whatsapp.com/send?phone=96560700265",
+          "https://web.whatsapp.com/send?phone=96560707382",
+          "https://web.whatsapp.com/send?phone=96565881496",
+        ];
       }
+
+      var existing_class = "";
+
+      if (flagLimit <= 3) {
+        document.getElementById("anc").href = href_values[flagLimit];
+      }
+
+      if (flagLimit > 4 && $(window).width() <= 1100) {
+        document.getElementById("anc").href =
+          "https://api.whatsapp.com/send?phone=96560903818";
+
+        flagLimit = 0;
+      } else if (flagLimit > 4 && $(window).width() > 1100) {
+        document.getElementById("anc").href =
+          "https://web.whatsapp.com/send?phone=96560903818";
+        flagLimit = 0;
+      }
+      var xNum = flagLimit + 1;
+      document.getElementById("iTest").value = xNum.toString();
+      document.updateSettings();
     </script>
   </body>
 
