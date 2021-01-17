@@ -1,13 +1,13 @@
-#test {
+#KtechVideo {
     position: relative;
     background-color: black;
-    height: 70vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
   }
   
-  #test video {
+  #KtechVideo video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,12 +22,12 @@
     transform: translateX(-50%) translateY(-50%);
   }
   
-  #test .container {
+  #KtechVideo .container {
     position: relative;
     z-index: 2;
   }
   
-  #test .overlay {
+  #KtechVideo .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,10 +39,10 @@
   }
   
   @media (pointer: coarse) and (hover: none) {
-    #test header {
+    #KtechVideo header {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
-    #test header video {
+    #KtechVideo header video {
       display: none;
     }
   }
