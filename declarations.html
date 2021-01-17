@@ -686,29 +686,35 @@
           </form>
 
           <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="text-center">
-                  <div>
-                    <iframe
-                      width="1400px"
-                      height="1480px"
-                      src="https://forms.office.com/Pages/ResponsePage.aspx?id=ytM25d3UzE2fg1it0dMUMbu6rb0qUVpMqkLGKA3F_bFUQjhHRzRWSFNFTFRZV05NTDFPSEpQVTRZNy4u&embed=true"
-                      frameborder="0"
-                      marginwidth="0"
-                      marginheight="0"
-                      style="border: none; max-width: 100%; max-height: 100vh"
-                      allowfullscreen
-                      webkitallowfullscreen
-                      mozallowfullscreen
-                      msallowfullscreen
-                    >
-                    </iframe>
-                  </div>
-                </h1>
-              </div>
-            </div>
+            <iframe
+              width="1640px"
+              height="5480px"
+              src="https://forms.office.com/Pages/ResponsePage.aspx?id=ytM25d3UzE2fg1it0dMUMbu6rb0qUVpMqkLGKA3F_bFUQjhHRzRWSFNFTFRZV05NTDFPSEpQVTRZNy4u&embed=true"
+              frameborder="0"
+              marginwidth="0"
+              marginheight="0"
+              style="border: none; max-width: 100%; max-height: 100vh"
+              allowfullscreen
+              webkitallowfullscreen
+              mozallowfullscreen
+              msallowfullscreen
+            >
+            </iframe>
           </div>
+
+          <!-- <script language="javascript">
+            function autoResizeDiv() {
+              document.getElementById("full-screen-me").style.height =
+                window.innerHeight + "px";
+            }
+            window.onresize = autoResizeDiv;
+            autoResizeDiv();
+          </script>
+          <style type="text/css">
+            body {
+              overflow: hidden;
+            }
+          </style> -->
 
           <script>
             // Map Markers
@@ -811,7 +817,7 @@
         </div>
       </div>
     </div>
-
+    <div style="clear: both"></div>
     <!-- testME -->
     <footer id="footer" class="footer">
       <div class="container">
@@ -961,11 +967,11 @@
 
       cookieButton.addEventListener("click", () => {
         cookieContainer.classList.remove("active");
-        localStorage.setItem("cookieBannerDisplayed", "true");
+        localStorage.setItem("KtechCookiesAccepted", "true");
       });
 
       setTimeout(() => {
-        if (!localStorage.getItem("cookieBannerDisplayed")) {
+        if (!localStorage.getItem("KtechCookiesAccepted")) {
           cookieContainer.classList.add("active");
         }
       }, 2000);
@@ -979,11 +985,11 @@
 
       cookieButton.addEventListener("click", () => {
         cookieContainer.classList.remove("active");
-        localStorage.setItem("cookieBannerDisplayed", "true");
+        localStorage.setItem("KtechCookiesAccepted", "true");
       });
 
       setTimeout(() => {
-        if (!localStorage.getItem("cookieBannerDisplayed")) {
+        if (!localStorage.getItem("KtechCookiesAccepted")) {
           cookieContainer.classList.add("active");
         }
       }, 2000);

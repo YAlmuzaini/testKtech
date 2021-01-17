@@ -884,18 +884,7 @@
       </div>
     </footer>
 
-    <div class="cookie-container">
-      <p>
-        <strong>
-          We use cookies in this website to give you the best experience on our
-          site and show you relevant ads. To find out more, read our
-          <a style="font-size: medium" href="privacyPolicy.html">Privacy Policy</a> and
-          <a style="font-size: medium" href="cookiesPolicies.html">Cookie Policy</a>.
-        </strong>
-      </p>
-
-      <button class="cookie-btn">Okay</button>
-    </div>
+    <!-- nothing -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -920,11 +909,11 @@
 
       cookieButton.addEventListener("click", () => {
         cookieContainer.classList.remove("active");
-        localStorage.setItem("cookieBannerDisplayed", "true");
+        localStorage.setItem("KtechCookiesAccepted", "true");
       });
 
       setTimeout(() => {
-        if (!localStorage.getItem("cookieBannerDisplayed")) {
+        if (!localStorage.getItem("KtechCookiesAccepted")) {
           cookieContainer.classList.add("active");
         }
       }, 2000);
