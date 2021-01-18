@@ -896,11 +896,6 @@
                             <option value="Colombia">Colombia</option>
                             <option value="Comoros">Comoros</option>
                             <option value="Congo">Congo</option>
-                            <option
-                              value="Congo, The Democratic Republic of The"
-                            >
-                              Congo, The Democratic Republic of The
-                            </option>
                             <option value="Cook Islands">Cook Islands</option>
                             <option value="Costa Rica">Costa Rica</option>
                             <option value="Cote D'ivoire">Cote D'ivoire</option>
@@ -1003,11 +998,6 @@
                             <option value="Lithuania">Lithuania</option>
                             <option value="Luxembourg">Luxembourg</option>
                             <option value="Macao">Macao</option>
-                            <option
-                              value="Macedonia, The Former Yugoslav Republic of"
-                            >
-                              Macedonia, The Former Yugoslav Republic of
-                            </option>
                             <option value="Madagascar">Madagascar</option>
                             <option value="Malawi">Malawi</option>
                             <option value="Malaysia">Malaysia</option>
@@ -1103,11 +1093,6 @@
                             </option>
                             <option value="Somalia">Somalia</option>
                             <option value="South Africa">South Africa</option>
-                            <option
-                              value="South Georgia and The South Sandwich Islands"
-                            >
-                              South Georgia and The South Sandwich Islands
-                            </option>
                             <option value="Spain">Spain</option>
                             <option value="Sri Lanka">Sri Lanka</option>
                             <option value="Sudan">Sudan</option>
@@ -1149,11 +1134,6 @@
                               United Kingdom
                             </option>
                             <option value="United States">United States</option>
-                            <option
-                              value="United States Minor Outlying Islands"
-                            >
-                              United States Minor Outlying Islands
-                            </option>
                             <option value="Uruguay">Uruguay</option>
                             <option value="Uzbekistan">Uzbekistan</option>
                             <option value="Vanuatu">Vanuatu</option>
@@ -1239,13 +1219,18 @@
                         <label class="control-label"
                           >Type<span style="color: red"> *</span></label
                         >
-                       <div>
-                           <select name="schoolType" id="schoolType" class="form-control" required>
+                        <div>
+                          <select
+                            name="schoolType"
+                            id="schoolType"
+                            class="form-control"
+                            required
+                          >
                             <option value="">Select School Type</option>
-                               <option value="Private">Private School</option>
-                               <option value="Public">Government School</option>
-                           </select>
-                       </div>
+                            <option value="Private">Private School</option>
+                            <option value="Public">Government School</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1300,22 +1285,37 @@
                 </div>
                 <div class="panel-body">
                   <div class="form-group">
-                    <label class="control-label">College<span style="color: red"> *</span></label>
+                    <label class="control-label"
+                      >College<span style="color: red"> *</span></label
+                    >
                     <div>
-                      <select name="College" id="collegeMajor" class="form-control" required>
+                      <select
+                        name="College"
+                        id="collegeDep"
+                        class="form-control"
+                        required
+                        onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"
+                      >
                         <option value="">Select Your College</option>
-                        <option value="BMM">Business Management</option>
-                        <option value="ITM">Information Technology</option>
+                        <option value="BMM">Business Management (BM)</option>
+                        <option value="IST">
+                          Information Systems and Technology (IST)
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="control-label">Major<span style="color: red"> *</span></label>
+                    <label class="control-label"
+                      >Major<span style="color: red"> *</span></label
+                    >
                     <div>
-                      <select name="College" id="collegeMajor" class="form-control" required>
-                        <option value="">Select Your Mahor</option>
-                        <option value="BMM">Business Management</option>
-                        <option value="ITM">Information Technology</option>
+                      <select
+                        name="College"
+                        id="collegeMajor"
+                        class="form-control"
+                        required
+                      >
+                        <option value="">Select Your Major</option>
                       </select>
                     </div>
                   </div>
@@ -1329,6 +1329,49 @@
               </div>
             </form>
           </div>
+
+          <!-- case BSM || IST -->
+          <script>
+            function dynamicdropdown(listindex) {
+              switch (listindex) {
+                case "IST":
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[0] = new Option(
+                    "Network System Maintenance and Security"
+                  );
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[1] = new Option("Network Design Technical");
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[2] = new Option(
+                    "Software Applications and Programming"
+                  );
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[3] = new Option("Web Applications and Programming");
+                  break;
+                case "BMM":
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[0] = new Option(
+                    "Management of Information Systems"
+                  );
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[1] = new Option("Sales and Marketing");
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[2] = new Option("E-Commerce");
+                  document.getElementById(
+                    "collegeMajor"
+                  ).options[3] = new Option("");
+                  break;
+              }
+              return true;
+            }
+          </script>
 
           <script>
             // Map Markers
