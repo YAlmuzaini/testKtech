@@ -55,17 +55,13 @@ body {
   width: 100%;
 }
 
-.carousel-inner img {
-
-  max-height: 0px;
-}
-
 .ktechTextTitle {
   color: white;
 }
 
 .introText {
   font-size: x-large;
+  color: #ffffff;
 }
 
 body a {
