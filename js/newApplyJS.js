@@ -34,6 +34,7 @@ $(document).ready(function () {
                 $(curInputs[i]).closest(".form-group").addClass("has-error");
             }
         }
+        allNextBtn.removeClass('btn-success').addClass('btn-default');
 
         if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
     });
