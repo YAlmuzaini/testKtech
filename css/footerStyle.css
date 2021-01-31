@@ -60,3 +60,8 @@
   font-size: 25px;
   padding: 10px 10px;
 }
+
+.footer .input-group {
+  max-width: 350px;
+  max-height: 350px;
+}

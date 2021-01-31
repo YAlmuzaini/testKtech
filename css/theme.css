@@ -20,6 +20,10 @@ Version: 		4.4.0
   animation: blink 1s steps(1, end) infinite;
 }
 
+.Nav {
+  text-transform: lowercase !important;
+}
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -57,11 +61,11 @@ body {
 
 .modal {
   text-align: center;
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .modal:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;

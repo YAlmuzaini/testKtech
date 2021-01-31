@@ -79,11 +79,6 @@ body {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-* {
-  -webkit-border-radius: 1px !important;
-  -moz-border-radius: 1px !important;
-  border-radius: 1px !important;
-}
 #logo {
   color: #666;
   width: 100%;
@@ -117,9 +112,9 @@ body {
 }
 
 #form-buscar > .form-group > .input-group > .form-control:focus {
-  border-color: #33a444;
+  border-color: #333ea4;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-    0 0 1px rgba(0, 109, 0, 0.8);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px rgba(0, 109, 0, 0.8);
+    0 0 1px rgba(0, 2, 109, 0.8);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px rgba(29, 0, 109, 0.8);
 }
