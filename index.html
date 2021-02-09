@@ -269,9 +269,13 @@
                         </li> -->
 
                         <li class="active visible-xs">
-                          <a style="color: white; font-weight: bold;" href="newApplyPage.html"> Apply Online</a>
+                          <a
+                            style="color: white; font-weight: bold"
+                            href="newApplyPage.html"
+                          >
+                            Apply Online</a
+                          >
                         </li>
-
 
                         <li>
                           <a href="Contactus.html"
@@ -379,7 +383,13 @@
                               <a
                                 href="https://ss.k-tech.edu.kw/Default.aspx"
                                 target="_blank"
-                                >My <span style="font-size: 14px;" class="text-lowercase">Ktech</span> Sign In</a
+                                >My
+                                <span
+                                  style="font-size: 14px"
+                                  class="text-lowercase"
+                                  >Ktech</span
+                                >
+                                Sign In</a
                               >
                             </li>
                             <li>
@@ -423,7 +433,12 @@
                           >
                         </li>
                         <li class="dropdown dropdown-mega">
-                          <a class="dropdown-toggle" href="#"> ABOUT <span style="font-size: 14px;" class="text-lowercase">Ktech</span></a>
+                          <a class="dropdown-toggle" href="#">
+                            ABOUT
+                            <span style="font-size: 14px" class="text-lowercase"
+                              >Ktech</span
+                            ></a
+                          >
                           <ul class="dropdown-menu">
                             <li>
                               <div class="dropdown-mega-content">
@@ -795,9 +810,9 @@
                   >
                     Welcome to Kuwait Technical College (Ktech) where a wide
                     variety of opportunities await you as a student. By
-                    selecting Ktech as your college of choice, you are
-                    embarking on a journey that will allow you to specialize in
-                    either Information Systems and Technology (IT) or Business
+                    selecting Ktech as your college of choice, you are embarking
+                    on a journey that will allow you to specialize in either
+                    Information Systems and Technology (IT) or Business
                     Management (BM), and gain valuable certificates. Ktech
                     international certificates are the portal into the workplace
                     market which is rapidly ever changing and continuously
@@ -809,11 +824,11 @@
                     style="text-justify: auto; text-align: justify"
                     class="ktechText"
                   >
-                    You will find at Ktech that each and every student is
-                    warmly welcomed and given the full attention of excellent
-                    faculty, staff and administration. Our aim is to assist all
-                    of our students in reaching the highest levels of success in
-                    their chosen course of study. If you decide to continue your
+                    You will find at Ktech that each and every student is warmly
+                    welcomed and given the full attention of excellent faculty,
+                    staff and administration. Our aim is to assist all of our
+                    students in reaching the highest levels of success in their
+                    chosen course of study. If you decide to continue your
                     education after the first two years at Ktech, we have
                     established a unique partnership with Kaplan University
                     headquartered in the United States and with a well-respected
@@ -1343,43 +1358,61 @@
     <footer id="footer" class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
-            <h4 class="title">Drop us a Message</h4>
-            <form>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><label for="email">Email address</label></span>
-                  <input
-                    class="form-control"
-                    placeholder="Write your email .."
-                    type="text"
-                  />
-                </div>
-                <br />
-                <div class="input-group">
-                  <textarea
-                    name="Contact"
-                    id=""
-                    cols="48"
-                    rows="5"
-                    placeholder="Your Name:&#10;Your Phone:&#10;Whats on your mind..."
-                  ></textarea>
-                </div>
+          <div
+            style="margin-bottom: 0px"
+            id="contactForm"
+            class="col-lg-4 col-md-4 col-sm-11 col-xs-12"
+          >
+            <h4 style="margin-bottom: 0px" class="title pl-md">
+              Drop us a Message
+            </h4>
+            <div class="panel">
+              <div class="panel-body bg-primary">
+                <form>
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><label for="email">Email:</label></span
+                        >
+                        <input
+                          style="width: 100%"
+                          type="email"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="Write your email..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <textarea
+                        style="width: 100%"
+                        id="comment"
+                        name="comment"
+                        rows="5"
+                        placeholder="Your Name:&#10;Your Phone:&#10;Whats on your mind..."
+                        class="form-control"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="row pull-right pr-md">
+                    <button
+                      type="submit"
+                      class="btn btn-primary pull-right"
+                      id="btnContactUs"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="col-sm-12">
-                <button
-                  type="submit"
-                  class="btn btn-primary pull-right"
-                  id="btnContactUs"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-            <br />
+            </div>
+            <!-- <br /> -->
           </div>
-          <div class="col-sm-1"><br /><br /></div>
-          <div class="col-sm-4">
+          <div class="col-sm-1 p-sm"></div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <h4 class="title">Imprtant Links</h4>
             <span class="acount-icon">
               <a href="#"
@@ -1398,19 +1431,11 @@
                 Cookies Policies</a
               >
             </span>
-            <br /><br />
+            <!-- <br /><br /> -->
           </div>
-          <div class="col-sm-3">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <h4 class="title">Follow Us</h4>
             <ul class="payment">
-              <li class="social-icons-whatsapp">
-                <a
-                  href="https://web.whatsapp.com/send?phone=96560903818"
-                  target="_blank"
-                  title="WhatsApp"
-                  ><i class="fa fa-whatsapp"></i
-                ></a>
-              </li>
               <li class="social-icons-facebook">
                 <a
                   href="https://www.facebook.com/KTCQ8"
@@ -1549,6 +1574,7 @@
 
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
+    <script src="js/newTestion.js"></script>
 
     <!-- Current Page Vendor and Views -->
     <script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>

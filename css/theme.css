@@ -16,6 +16,24 @@ Version: 		4.4.0
   unicode-range: U+0600-06FF;
 }
 
+#inputEmail4{
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+textarea {
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+#contactForm .panel{
+  border: none;
+}
+
+#contactForm .bg-primary{
+  background-color: #212e7e;
+}
+
 .blink {
   animation: blink 1s steps(1, end) infinite;
 }
