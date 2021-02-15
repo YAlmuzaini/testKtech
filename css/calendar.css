@@ -1,0 +1,30 @@
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover,
+.nav-tabs li.active a:focus {
+  background: #fff;
+  font-weight: bolder;
+  border-left-color: #eee;
+  border-right-color: #eee;
+  border-top: 3px solid #11173f;
+  color: #212e7e;
+}
+
+.nav-tabs li a,
+.nav-tabs li a:hover {
+  background: #f4f4f4;
+  font-weight: bold;
+  border-bottom: none;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-top: 3px solid #bac2e8;
+  color: gray;
+}
+
+.panel-default {
+  border-color: #8893d3;
+}
+
+.panel-group .panel-heading a {
+  color: #212e7e;
+  font-weight: bold;
+}
