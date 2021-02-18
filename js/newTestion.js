@@ -29,16 +29,16 @@ $("#someSwitchOptionInfo").change(function () {
 //     }
 // }
 
-$(function () {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
-            $('.header-logo .logo-normal').attr('src', 'img/image003.png');
-        }
-        if ($(this).scrollTop() < 1000) {
-            $('.header-logo .logo-normal').attr('src', 'img/logo1.svg');
-        }
-    })
-});
+// $(function () {
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 1000) {
+//             $('.header-logo .logo-normal').attr('src', 'img/image003.png');
+//         }
+//         if ($(this).scrollTop() < 1000) {
+//             $('.header-logo .logo-normal').attr('src', 'img/logo1.svg');
+//         }
+//     })
+// });
 
 
 // $('.sign-in__button').click(function (e) {

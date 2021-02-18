@@ -16,21 +16,25 @@ Version: 		4.4.0
   unicode-range: U+0600-06FF;
 }
 
-#inputEmail4{
-  max-width: 100%; 
+#inputEmail4 {
+  max-width: 100%;
   max-height: 100%;
+}
+
+.logo-normal {
+  width: 292px;
 }
 
 textarea {
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 100%;
 }
 
-#contactForm .panel{
+#contactForm .panel {
   border: none;
 }
 
-#contactForm .bg-primary{
+#contactForm .bg-primary {
   background-color: #212e7e;
 }
 

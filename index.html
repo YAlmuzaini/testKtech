@@ -42,6 +42,7 @@
       rel="stylesheet"
       href="vendor/magnific-popup/magnific-popup.min.css"
     />
+    <link rel="stylesheet" href="aos/aos.css" />
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme-elements.css" />
     <link rel="stylesheet" href="css/theme-blog.css" />
@@ -181,19 +182,24 @@
         id="header"
         data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 0, "stickySetTop": "0", "stickyChangeLogo": false}'
       >
-        <div class="header-body">
-          <div class="panel-group without-bg without-borders" id="accordion8">
+        <div
+          class="header-body"
+          style="border-top-width: 0px; padding-top: 0px"
+        >
+          <div
+            class="panel-group without-bg without-borders"
+            style="margin-bottom: 0px"
+            id="accordion8"
+          >
             <div class="panel panel-primary"></div>
 
             <div class="header-container container">
               <div class="header-row">
-                <div class="header-column">
+                <div data-aos="fade-down" class="header-column">
                   <div class="header-logo">
                     <a href="index.html">
                       <img
                         alt="Porto"
-                        width="349"
-                        height="74"
                         data-sticky-width="250"
                         data-sticky-height="53"
                         data-sticky-top="33"
@@ -245,7 +251,15 @@
                         </div>
                       </form>
                     </div> -->
-
+                    <button
+                      class="btn header-btn-collapse-nav"
+                      data-toggle="collapse"
+                      data-target=".header-nav-main"
+                      style="margin-left: 0px; margin-top: 30px; margin-bottom: 0px;"
+                    >
+                      <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- one -->
                     <nav class="header-nav-top">
                       <ul class="nav nav-pills">
                         <!-- <li li class="active">
@@ -333,13 +347,14 @@
                   </a>
                   <div class="header-row">
                     <div class="header-nav">
-                      <button
+                      <!-- <button
                         class="btn header-btn-collapse-nav"
                         data-toggle="collapse"
                         data-target=".header-nav-main"
+                        style="margin-left: 0px; margin-top: 22px"
                       >
                         <i class="fa fa-bars"></i>
-                      </button>
+                      </button> -->
 
                       <ul class="header-social-icons social-icons hidden-xs">
                         <li class="social-icons-facebook">
@@ -381,7 +396,7 @@
                       >
                         <nav>
                           <ul class="nav nav-pills" id="mainNav1">
-                            <li class="active">
+                            <li class="active hidden-xs">
                               <a href="newApplyPage.html"> Apply Online</a>
                             </li>
                             <li>
@@ -763,18 +778,18 @@
               style="height: 100%"
               class="d-flex text-center align-items-center"
             >
-              <div style="width: 100%" class="text-white">
+              <div style="width: 100%;" class="text-white">
                 <br />
                 <h1></h1>
-                <h1 class="ktechTextTitle">
+                <h1 data-aos="fade-down" class="ktechTextTitle">
                   <strong>Welcome to kuwait technical college</strong>
                 </h1>
-                <h1 class="ktechTextTitle">
+                <h1 data-aos="fade-down" class="ktechTextTitle">
                   <strong>حياكم الله في كلية الكويت التقنية</strong>
                 </h1>
                 <br /><br />
-                <div class="col-md-12">
-                  <p class="lead text-center text-primary introText">
+                <div data-aos="fade-left" class="col-md-12">
+                  <p style="height: 100%;" class="lead text-center text-primary introText">
                     <strong>
                       Welcome to Kuwait Technical College (Ktech) where a wide
                       variety of opportunities await you as a student. By
@@ -1207,7 +1222,7 @@
             <br />
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div data-aos="fade-right" class="col-md-6">
                   <h4>Ktech <strong>Location</strong></h4>
 
                   <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
@@ -1220,7 +1235,7 @@
                     allowfullscreen
                   ></iframe>
                 </div>
-                <div class="col-md-6">
+                <div data-aos="fade-left" class="col-md-6">
                   <ul class="list list-icons list-icons-style-3 mt-xlg">
                     <li>
                       <i class="fa fa-map-marker"></i
@@ -1382,7 +1397,7 @@
                     <div class="form-group col-md-12">
                       <div class="input-group">
                         <span class="input-group-addon"
-                          ><label for="email">Email:</label></span
+                          ><label style="font-weight: normal;" for="email">Email:</label></span
                         >
                         <input
                           style="width: 100%"
@@ -1495,6 +1510,13 @@
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="vendor/vide/vide.min.js"></script>
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1200,
+      });
+    </script>
 
     <!-- cookie Consent -->
 
