@@ -1,167 +1,63 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300|Oswald");
-
-/* Form fields */
-#booking-form {
-  font-family: "Merriweather", serif;
-  max-width: 100%;
-  margin: 40px auto;
-}
-#booking-form ul {
-  padding-left: 0;
-}
-#booking-form li {
-  list-style: none;
-}
-#booking-form input,
-#booking-form textarea,
-#booking-form select {
-  font-size: 18px;
-  padding: 0 28px;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid rgb(233, 233, 233);
-  text-align: left;
-  border-radius: 35px;
-  color: #000000;
-
-  letter-spacing: normal;
-  height: 50px;
-  line-height: 50px;
-  font-family: "Merriweather", serif;
-  background: #fff;
-  margin-bottom: 20px;
-}
-#booking-form select {
-  background: url("https://seashineadventures.com/wp-content/uploads/2017/08/grey-chevron.png")
-    no-repeat;
-  -webkit-appearance: none;
-  appearance: none;
-  background-size: 15px;
-  background-position: 97% 50%;
-}
-#booking-form textarea {
-  height: 120px;
-  line-height: 1.5;
-  padding: 15px 28px;
-}
-#booking-form input:focus,
-#booking-form textarea:focus,
-#booking-form select:focus {
-  outline: 0;
-  border: 1px solid rgb(211, 211, 211);
-}
-#booking-form label {
-  font-size: 18px;
-  font-weight: 300;
-  display: block;
-  margin-bottom: 10px;
-}
-
-/* Buttons */
-#booking-form .next-btn,
-#booking-form .submit-btn {
-  background: #82ccc8;
-  padding: 13px 20px;
+.panel-primary > .panel-heading {
   color: #fff;
-  font-family: oswald, sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 1px;
-  min-width: 400px;
+  background-color: #212e7e;
+  border-color: #212e7e;
+}
+
+.panel-primary {
+  border-color: #212e7e;
+}
+
+span.title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a.info {
+  vertical-align: bottom;
+  position:relative; /* Anything but static */
+  width: 1.5em;
+  height: 1.5em;
+  text-indent: -9999em;
   display: inline-block;
-  text-align: center;
-  font-weight: 400;
-  border-radius: 0;
-  border: 0;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  width: 100%;
+  color: white;
+  font-weight:bold;
+  font-size:1em;
+  line-height:1em;
+  background-color: #91b2d2;
+  margin-left: .25em;
+  -webkit-border-radius:.75em;
+  -moz-border-radius:.75em;
+  border-radius:.75em;
+}
+a.info:hover {
+  background-color:#628cb6;
+  cursor: hand; 
   cursor: pointer;
 }
-
-#booking-form .next-btn:hover,
-#booking-form .submit-btn:hover {
-  background-color: #444b5d;
-  color: #fff;
-}
-
-/* Progress Bar */
-.progress-wrap {
-  margin: auto;
-  display: table;
-}
-.line-progress-bar {
-  display: flex;
-  margin: auto;
-  width: 100%;
-}
-.line {
-  height: 1px;
-  width: 250px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgb(217, 217, 217);
+a.info:before {
+  content:"?";
   position: absolute;
-  margin-top: 8px;
-}
-.progress-wrap div ul {
-  display: flex;
-  width: 250px;
-  list-style: none;
-  padding: 0px;
-  margin: initial;
-  justify-content: space-between;
-  z-index: 1;
-}
-.progressbar-dots {
-  display: inline-flex;
-  border: #949494 solid 4px;
-  background: #333333;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color: #d4d4d4;
-  font-size: 20px;
-  margin-left: 0px;
-  color: #d4d4d4;
-  border: 0px solid rgb(217, 217, 217);
-  background: rgb(217, 217, 217);
-}
-.progressbar-dots span {
-  font-size: 12px;
-  line-height: 12px;
-  position: absolute;
-  margin-top: 60px;
-  /* width: 75px; */
-  float: left;
-  margin-left: -30px;
-  display: none;
-}
-.progressbar-dots.active {
-  color: #fff;
-  border: 0px solid rgb(38, 163, 134);
-  background: #82ccc8;
+  top: .25em;
+  left:0;
+  text-indent: 0;
+  display:block;
+  width:1.5em;
+  text-align:center;
 }
 
-/*  Tab */
-.tab-pane {
-  display: none;
-}
-.tab-pane:first-child {
-  display: block;
+.popover-title {
+  font-weight:bold;
 }
 
-/* Error */
-span.error {
-  font-size: 12px;
-  font-family: "helvetica neue", arial, sans-serif;
-  color: #d6041d;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 10px;
+
+label a.info, 
+label div.popover.fade.in { 
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
+label:hover a.info, 
+label:hover div.popover.fade.in { 
+  opacity: 1; }

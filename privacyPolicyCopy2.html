@@ -696,7 +696,9 @@
             <h2><strong>Request</strong> a Help from Ktech</h2>
             <div class="panel panel-primary setup-content" id="step-1">
               <div class="panel-heading">
-                <h3 class="panel-title text-lowercase">Please Fill Your Info</h3>
+                <h3 class="panel-title text-lowercase">
+                  <span class="text-uppercase">P</span>lease Fill Your Info
+                </h3>
               </div>
               <div class="panel-body">
                 <div class="row">
@@ -758,9 +760,19 @@
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label for="last"
-                        >ktech ID<span style="color: red"> *</span></label
-                      >
+                      <label>
+                        <span class="title">ktech ID<span style="color: red"> *</span></span>
+
+                        <a
+                          class="info"
+                          data-toggle="popover"
+                          data-placement="right"
+                          data-content="This is the helpful information that will appear to help users along their way. They'll love it."
+                          title=""
+                          data-original-title="Help here"
+                          >Info</a
+                        >
+                      </label>
                       <input
                         type="text"
                         class="form-control"
@@ -788,7 +800,27 @@
                     </div>
                   </div>
                 </div>
+
                 <hr />
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="phone"
+                      >Extra information ?<span style="color: red">
+                        *</span
+                      ></label
+                    >
+                    <textarea
+                      style="width: 100%"
+                      id="comment"
+                      name="comment"
+                      rows="5"
+                      placeholder="Would you like to add extra information ? &#10;please be specific&#10;"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                </div>
+
                 <button
                   class="btn btn-primary nextBtn pull-right"
                   type="submit"
