@@ -1,19 +1,19 @@
-.panel-primary > .panel-heading {
+#helpMeForm .panel-primary > .panel-heading {
   color: #fff;
   background-color: #212e7e;
   border-color: #212e7e;
 }
 
-.panel-primary {
+#helpMeForm .panel-primary {
   border-color: #212e7e;
 }
 
-span.title {
+/* span.title {
   font-weight: bold;
   font-size: 16px;
-}
+} */
 
-a.info {
+#helpMeForm a.info {
   vertical-align: bottom;
   position:relative; /* Anything but static */
   width: 1.5em;
@@ -30,12 +30,12 @@ a.info {
   -moz-border-radius:.75em;
   border-radius:.75em;
 }
-a.info:hover {
+#helpMeForm a.info:hover {
   background-color:#628cb6;
   cursor: hand; 
   cursor: pointer;
 }
-a.info:before {
+#helpMeForm a.info:before {
   content:"?";
   position: absolute;
   top: .25em;
@@ -46,18 +46,19 @@ a.info:before {
   text-align:center;
 }
 
-.popover-title {
+#helpMeForm .popover-title {
   font-weight:bold;
 }
 
 
-label a.info, 
-label div.popover.fade.in { 
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease;
-  -moz-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+/* Chrome, Safari, Edge, Opera */
+#helpMeForm input::-webkit-outer-spin-button,
+#helpMeForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-label:hover a.info, 
-label:hover div.popover.fade.in { 
-  opacity: 1; }
+
+/* Firefox */
+#helpMeForm input[type=number] {
+  -moz-appearance: textfield;
+}

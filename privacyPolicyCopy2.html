@@ -692,9 +692,9 @@
             <br />
           </form>
 
-          <div class="container">
+          <div id="helpMeForm" class="container">
             <h2><strong>Request</strong> a Help from Ktech</h2>
-            <div class="panel panel-primary setup-content" id="step-1">
+            <div  class="panel panel-primary setup-content">
               <div class="panel-heading">
                 <h3 class="panel-title text-lowercase">
                   <span class="text-uppercase">P</span>lease Fill Your Info
@@ -767,14 +767,15 @@
                           class="info"
                           data-toggle="popover"
                           data-placement="right"
-                          data-content="This is the helpful information that will appear to help users along their way. They'll love it."
+                          data-content="This is form is for ktech student only. you can ask us anything you want <a href='https://www.k-tech.edu.kw/RequestInfo.aspx'>HERE</a>"
+                          data-html="true"
                           title=""
-                          data-original-title="Help here"
+                          data-original-title="Not a student?"
                           >Info</a
                         >
                       </label>
                       <input
-                        type="text"
+                        type="number"
                         class="form-control"
                         placeholder="Enter your last Name"
                         required="required"
@@ -820,7 +821,6 @@
                     ></textarea>
                   </div>
                 </div>
-
                 <button
                   class="btn btn-primary nextBtn pull-right"
                   type="submit"
