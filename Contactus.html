@@ -42,7 +42,7 @@
       rel="stylesheet"
       href="vendor/magnific-popup/magnific-popup.min.css"
     />
-<link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme-elements.css" />
     <link rel="stylesheet" href="css/theme-blog.css" />
     <link rel="stylesheet" href="css/theme-shop.css" />
@@ -219,8 +219,6 @@
 
                     <nav class="header-nav-top">
                       <ul class="nav nav-pills">
-                        
-
                         <li>
                           <a href="Contactus.html"
                             ><span class="ws-nowrap"
@@ -746,11 +744,11 @@
                         <ul class="list list-icons list-icons-style-3 mt-xlg">
                           <li>
                             <i class="fa fa-map-marker"></i
-                            ><strong>Address:</strong> Block 2, Street 5,
-                            Abu-Halifa, Kuwait
+                            ><strong>Address:</strong> kuwait technical college
+                            Block 2, Street 5, Abu-Halifa, Kuwait
                           </li>
                           <li>
-                            <i class="fa fa-envelope-square"></i
+                            <i class="fa fa-envelope"></i
                             ><strong>P.O.Box:</strong> 232, Abu-Halifa, Kuwait,
                             54753
                           </li>
@@ -760,12 +758,18 @@
                             ><strong>Phone:</strong> +(965) 1811222
                           </li>
                           <li>
-                            <i class="fa fa-fax"></i
-                            ><strong>Fax:</strong> +(965) 2371-5923
+                            <i class="fa fa-question"></i
+                            ><strong>Info:</strong> info@ktech.edu.kw
                           </li>
                           <li>
                             <i class="fa fa-envelope"></i
-                            ><strong>Email: </strong>admission@K-TECH.edu.kw
+                            ><strong>Admissions:</strong>
+                            admission@k-tech.edu.kw
+                          </li>
+                          <li>
+                            <i class="fa fa-envelope"></i
+                            ><strong>Registration:</strong>
+                            Registration@k-tech.edu.kw
                           </li>
                         </ul>
                       </div>
@@ -778,7 +782,7 @@
         </div>
       </div>
     </div>
-<footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
@@ -832,7 +836,8 @@
                 ><i class="fa fa-eye" aria-hidden="true"></i> Privacy Policy</a
               >
               <a href="cookiesPolicies.html"
-                ><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Cookies Policies</a
+                ><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                Cookies Policies</a
               >
             </span>
             <br /><br />
@@ -917,7 +922,6 @@
         }
       }, 2000);
     </script>
-
 
     <!-- jquery whatsapp icon-->
 
@@ -1071,52 +1075,45 @@
 		-->
 
     <script type="text/javascript">
-
       var flagLimit = 0;
       var fso;
       var href_values;
 
+      if ($(window).width() <= 1100) {
+        href_values = [
+          "https://api.whatsapp.com/send?phone=96567009121",
+          "https://api.whatsapp.com/send?phone=96560700265",
+          "https://api.whatsapp.com/send?phone=96560707382",
+          "https://api.whatsapp.com/send?phone=96565881496",
+        ];
+      } else {
+        href_values = [
+          "https://web.whatsapp.com/send?phone=96567009121",
+          "https://web.whatsapp.com/send?phone=96560700265",
+          "https://web.whatsapp.com/send?phone=96560707382",
+          "https://web.whatsapp.com/send?phone=96565881496",
+        ];
+      }
 
+      var existing_class = "";
 
+      if (flagLimit <= 3) {
+        document.getElementById("anc").href = href_values[flagLimit];
+      }
 
-          if ($(window).width() <= 1100) {
+      if (flagLimit > 4 && $(window).width() <= 1100) {
+        document.getElementById("anc").href =
+          "https://api.whatsapp.com/send?phone=96560903818";
 
-              href_values = ["https://api.whatsapp.com/send?phone=96567009121", "https://api.whatsapp.com/send?phone=96560700265", "https://api.whatsapp.com/send?phone=96560707382", "https://api.whatsapp.com/send?phone=96565881496"];
-
-
-
-          } else {
-
-              href_values = ["https://web.whatsapp.com/send?phone=96567009121", "https://web.whatsapp.com/send?phone=96560700265", "https://web.whatsapp.com/send?phone=96560707382", "https://web.whatsapp.com/send?phone=96565881496"];
-
-          }
-
-          var existing_class = '';
-
-
-          if (flagLimit <= 3) {
-
-              document.getElementById("anc").href = href_values[flagLimit];
-
-
-          }
-
-
-
-          if (flagLimit > 4 && $(window).width() <= 1100) {
-
-              document.getElementById("anc").href = "https://api.whatsapp.com/send?phone=96560903818";
-
-              flagLimit = 0;
-          } else if (flagLimit > 4 && $(window).width() > 1100) {
-
-              document.getElementById("anc").href = "https://web.whatsapp.com/send?phone=96560903818";
-              flagLimit = 0;
-
-          }
-          var xNum = flagLimit +1;
-          document.getElementById("iTest").value = xNum.toString();
-          document.updateSettings();
+        flagLimit = 0;
+      } else if (flagLimit > 4 && $(window).width() > 1100) {
+        document.getElementById("anc").href =
+          "https://web.whatsapp.com/send?phone=96560903818";
+        flagLimit = 0;
+      }
+      var xNum = flagLimit + 1;
+      document.getElementById("iTest").value = xNum.toString();
+      document.updateSettings();
     </script>
   </body>
 
