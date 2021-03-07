@@ -58,6 +58,11 @@ textarea {
   }
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   direction: ltr;
   overflow-x: hidden;
